@@ -6,19 +6,20 @@ title: Hello，Git
 <h2>{{ page.title }}</h2>
 
 <p>我的第一篇文章</p>
-<p>折腾了大半天，想自己构建一个能正常显示的博客，最后发现在_posts里面文件应该以year-mouth-day-name命名才能正常显示链接</p>
+<p>折腾了大半天，想自己构建一个能正常显示的博客，最后发现在_posts里面文件应该以year-mouth-day-name命名才能正常显示链接。</p>
 <p>另记录下本地创建并上传的步骤:</p>
-<p>1.创建文件夹jekyll(根目录，这将和你的远程服务器上的仓库同名)，并对目录初始化(git init)，然后创建分支gh-pages，只有在分支中才能生成网页文件</p>
-<p>2.在根目录下创建配置文件_config.yml，目前其中只有baseurl: /jekyll(这将会在index中用到)</p>
+<p>1.创建文件夹jekyll(根目录，这将和你的远程服务器上的仓库同名)，并对目录初始化(git init)，然后创建分支gh-pages，只有在分支中才能生成网页文件。</p>
+<p>2.在根目录下创建配置文件_config.yml，目前其中只有baseurl: /jekyll(这将会在index中用到)。</p>
 <p>3.创建模板文件夹_layouts，创建默认模板default.html。</p>
-<p>4.创建_posts文件夹，存放博文，切忌该文件夹下博文名字应以year-mouth-day-name命名，其他合法命名方式有待实验。(单纯的类似hellworld.html为无效文件名)</p>
-<p>5.在根目录下创建index.html为博客首页.
+<p>4.创建_posts文件夹，存放博文，切忌该文件夹下博文名字应以year-mouth-day-name命名，其他合法命名方式有待实验。(单纯的类似hellworld.html为无效文件名)。</p>
+<p>5.在根目录下创建index.html为博客首页。
 <p>注意事项：当你在远程服务器端修改了代码后，在本地应先git pull获得最新代码，然后如果存在未”merge“的文件，应手动修改，然后再进行本地代码修改、上传。</p>
-<p>附本地命令:git add .</p>
+<p>附本地命令:</p>
+<p>git add .</p>
 <p>           git add -A or --ignore-removal</p>
 <p>           git commit -m "text"</p>
 <p>           git pull</p>
 <p>           git remote add origin https://github.com/username/jekyll.git(初次上传到远程同名仓库)</p>
 <p>           git push origin gh-pages</p>
-
+<p></p>
 <p>{{ page.date | date_to_string }}</p>
